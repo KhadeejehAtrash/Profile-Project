@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khadeejeh | Front-End Developer</title>
+  <link rel="stylesheet" href="./dist/main.css">
+
+
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">MyPortfolio</div>
+
+      <nav class="header__nav">
+        <a href="#home" class="header__link">Home</a>
+        <a href="#projects" class="header__link">Projects</a>
+        <a href="#contact" class="header__link">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="intro__container">
+
+        <div class="intro__content">
+          <h1 class="intro__title">Hi, I’m Khadeejeh</h1>
+
+          <p class="intro__text">
+            Front-end developer crafting accessible and responsive web experiences.
+          </p>
+   
+          <div class="intro__actions">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--secondary">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="intro__image-wrapper">
+          <img src="./assets/profile.png" alt="Khadeejeh smiling at the camera" class="intro__image" loading="lazy" />
+        </div>
+
+
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="projects__container">
+
+        <h2 class="projects__title">Latest Projects</h2>
+
+        <div class="projects__grid">
+
+          <article class="project-card">
+            <img src="./assets/2.png" alt="Screenshot of project one" class="project-card__image">
+            <h3 class="project-card__title">Project One</h3>
+            <p class="project-card__text">Responsive landing page built with SCSS and BEM.</p>
+          </article>
+
+          <article class="project-card">
+            <img src="./assets/1.png" alt="Screenshot of project two" class="project-card__image">
+            <h3 class="project-card__title">Project Two</h3>
+            <p class="project-card__text">Accessible dashboard interface.</p>
+          </article>
+
+          <article class="project-card">
+            <img src="./assets/project3.png" alt="Screenshot of project three" class="project-card__image">
+            <h3 class="project-card__title">Project Three</h3>
+            <p class="project-card__text">Modern CSS animation showcase.</p>
+          </article>
+
+        </div>
+
+        <a href="#" class="btn btn--primary projects__button">View All Projects</a>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">© 2026 Khadeejeh</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+@use "../utils/utils" as *;
+
+.footer {
+  background: $color-surface;
+  border-top: 1px solid $color-border;
+  padding: $space-lg 0;
+  text-align: center;
+
+  &__text {
+    color: $color-text-muted;
+    font-size: 0.9rem;
+  }
+}

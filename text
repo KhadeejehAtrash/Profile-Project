@@ -1,0 +1,20 @@
+src
+├── index.html
+|__ main.scss
+├── scss
+│   ├── base
+│   │   ├── _resets.scss
+│   │   └── base.scss
+│   ├── blocks
+│   │   ├── _footer.scss
+│   │   ├── _header.scss
+│   │   ├── _any_block_partial.scss
+│   │   └── blocks.scss
+│   └── utils
+│       ├── _mixins.scss
+│       ├── _variables.scss
+│       └── utils.scss
+
+
+
+sass --watch scss/main.scss dist/main.css

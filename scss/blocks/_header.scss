@@ -1,0 +1,48 @@
+@use '../utils/utils' as *;
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: $color-surface;
+  border-bottom: 1px solid $color-border;
+  z-index: 1000;
+
+  &__container {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $space-md 0;
+    transition: padding $transition;
+  }
+
+  &__logo {
+    font-weight: 700;
+  }
+
+  &__nav {
+    display: flex;
+    gap: $space-lg;
+  }
+
+  &__link {
+    color: $color-text;
+    text-decoration: none;
+    transition: $transition;
+
+    &:hover {
+      color: $color-primary;
+    }
+
+    &:focus-visible {
+      outline: 3px solid $color-primary;
+      outline-offset: 3px;
+    }
+  }
+
+  @media (max-height: 800px) {
+    &__container {
+      padding: 0.5rem 0;
+    }
+  }
+}

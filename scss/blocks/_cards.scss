@@ -1,0 +1,37 @@
+@use "../utils/utils" as *;
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  padding: $space-lg;
+
+  transition: transform $transition, box-shadow $transition;
+
+  scroll-snap-align: start;
+  min-width: 85%;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  &__image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: $radius-md;
+  }
+
+  &__title {
+    margin: $space-md 0 $space-sm;
+  }
+
+  &__text {
+    color: $color-text-muted;
+  }
+}
